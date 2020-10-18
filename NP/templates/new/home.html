@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>HOME</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="{%static "css/new.css" %}">
+  </head>
+  <body class="container">
+    <div class="jumbotron container" style="margin-top:350px">
+   <form class="post-form" enctype="multipart/form-data" method="POST" autocomplete="off">
+     {%csrf_token%}
+      {{form.as_p}}
+      <p class="help-block">Only pdf, doc, docx</p>
+      <button type="submit" class="btn btn-success">Submit</button>
+      </form>
+</div>
+  </body>
+</html>

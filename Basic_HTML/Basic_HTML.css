@@ -1,0 +1,16 @@
+div{
+	color:white;
+	background:black;
+	font-size:1.5em
+}
+
+span{
+	color:yellow;	
+	background-color:black;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}

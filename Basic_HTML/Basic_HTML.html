@@ -1,0 +1,212 @@
+<!doctype html>  <!-- This represents version of HTML language we are using in this page -->
+
+<html lang="en">	<!-- This represents language of content which we are using in this page -->
+
+	<head>
+
+		<!-- meta tag for Generator, Author, Keywords, Descriptions etc-->
+		<!-- link tag will used for linking CSS code-->
+		<meta charset = "UTF-8" />
+		<meta name="Generator" content="EditPlus">
+		<meta name="Author" content="">
+		<meta name="Keywords" content="">
+		<meta name="Description" content="">
+		<title>Basic HTML for Django Demo Class</title>
+		<link rel="stylesheet" href="Basic_HTML.css">
+	</head>
+
+	<body>
+	<!--
+	This is how we can add background image
+	<body style="background-image: url('abc.png');">
+	-->
+		<!-- Heading tag-->
+		<h1> This is Heading 1 </h1>
+		<h2> This is Heading 2 </h2>
+		<h3> This is Heading 3 </h3>
+		<h4> This is Heading 4 </h4>
+		<h5> This is Heading 5 </h5>
+		<h6> This is Heading 6 </h6>
+
+		<!-- Paragraph tag-->
+		<h1> Paragraph tag </h1>
+		<p>This is first Paragraph</p>
+		<p>This is Second Paragraph</p>
+
+		<!-- For Bold and Italic-->
+		<h1> For Bold and Italic </h1>
+		<p><b>This Paragraph is in Bold Case using b tag</b><p>
+		<p><i>This Paragraph is in Italic Case using i tag</i></p>
+		<p><strong>This Paragraph is in Bold Case using strong tag</strong><p>
+		<p><em>This Paragraph is in Italic Case using in em tag</em></p>
+
+		<!-- br and hr tag - to break line and add horizontal line between paragraph -->
+		<h1> br and hr tag - to break line and add horizontal line between paragraph </h1>
+		<p>with help of br tag <br> this is how we can break the line</p>
+		<hr>
+		<p>This is how we can draw a line between paragraphs with hr tag</p>
+
+		<!-- Ordered List-->
+		<h1> Ordered List </h1>
+		<ol>
+			<li>Item1</li>
+			<li>Item2</li>
+			<li>Item3</li>
+			<li>Item4</li>
+		</ol>
+
+		<!-- Unordered List-->
+		<h1> Unordered List </h1>
+		<ul>
+			<li>Item1</li>
+			<li>Item2</li>
+			<li>Item3</li>
+			<li>Item4</li>
+		</ul>
+
+		<!-- Nested List -- List Inside List-->
+		<h1> Nested List -- List Inside List </h1>
+		<ul>
+			<li>Item1</li>
+			<li>Item2</li>
+				<ol>
+					<li>ItemA</li>
+					<li>ItemB</li>
+					<li>ItemC</li>
+					<li>ItemD</li>
+				</ol>
+			<li>Item3</li>
+			<li>Item4</li>
+		</ul>
+
+		<!-- div tag - Used if we want CSS styling for whole division-->
+		<h1>div tag - Used if we want CSS styling for whole division</h1>
+		<div>
+			<p>It should be in white color and black background</p>
+		</div>
+
+		<!-- span tag - Used if we want CSS styling for particular line or word-->
+		<h1>span tag - Used if we want CSS styling for particular line or word</h1>
+		<p>Font color where span tag is applicable is <span>yellow</span> and background color is <span>black</span></p>
+
+		<!-- img tag - to set an image inside webpage-->
+		<h1>img tag - to set an inage inside webpage</h1>
+		<img src="473c64a896704e3879118e3a35f95345.jpg" alt="Image is not available!!" class="center">
+
+		<!-- Hyperlink by using anchoe tag <a> -->
+		<h1>Hyperlink by using anchor tag <a></h1>
+		<a href="https://www.google.com/">Click here for Google search</a>
+
+		<!-- Table cretion - table,thead,th,tr,td -->
+		<h1> Table Creation - table,thead,th,tr,td </h1>
+		<table border="2">
+			<thead>
+				<th>emp_no</th>
+				<th>emp_name</th>
+				<th>emp_salary</th>
+				<th>emp_designation</th>
+				<th>emp_pic</th>
+			</thead>
+			<tr>
+				<td>1043288</td>
+				<td><a href="kishan.com">Kishan</a></td>
+				<td>1000000</td>
+				<td>Senior Engineer</td>
+				<td><img src="images.png" height="225" width="225"></td>
+			</tr>
+			<tr>
+				<td>1043299</td>
+				<td><a href="kishan.com">Rahul</a></td>
+				<td>35600</td>
+				<td>Systems Engineer</td>
+				<td><img src="abc.png" height="225" width="225"></td>
+			</tr>
+		</table>
+
+		<!-- HTML forms-->
+		<h1>HTML Forms</h1>
+		<form action="https://www.google.co.in/" method="post">
+			Name    : <input type="text" name="username" placeholder="Enter your name here:" required>*<br>
+			Email   : <input type="email" value="xyz@abc.com"/><br>
+			DOB     : <input type="date"/><br>
+			Color	: <input type="color"/><br>
+			Checkbox: <input type="checkbox"/><br>
+			<a>Are you from J&K ?</a>
+			Yes     : <input type="radio"/>
+			No      : <input type="radio"/><br>
+			Password: <input type="password"/><br>
+			<input type="submit" value="LogIn"/>
+		</form>
+
+		<!-- Label tag- to assocoate lable and input-->
+		<h1>Label tag- to assocoate lable and input</h1>
+		<form action="https://www.google.co.in/">
+			<label for="customername">Enter Name:</label>
+			<input type="text" id="customername" name="username" required/>*<br>
+			<input type="submit" value="LogIn"/>
+		</form>
+
+		<!-- How to implement radio button, Name of all Radio button should be same -->
+		<h1>How to implement radio button, Name of all Radio button should be same</h1>
+		<form>
+			<h3>Marital status:-</h3>
+			<label for="si">Single</label>
+			<input id="si" type="radio" name="ms" value="Single">
+			<label for="ma">Married</label>
+			<input id="ma" type="radio" name="ms" value="Married">
+			<label for="di">Single</label>
+			<input id="di" type="radio" name="ms" value="Divorced"><br><br>
+			<input type="submit" value="Submit"/>
+		</form>
+
+		<!-- How to implement drop down/select box?? -->
+		<h1>How to implement drop down/select box??</h1>
+		<h3>Select your payment method</h3>
+		<form>
+		<select name="pmode">  <!-- Multiple use for multiple value selection-->
+			<option value="empty"></option>
+			<option value="ccard">Credit card</option>
+			<option value="dcard">Debit card</option>
+			<option value="pp">Paypal</option>
+			<option value="nb">Net Banking</option>
+			<option value="cod">Cash on delivery</option>
+		</select><br>
+		<input type="submit" value="Submit"/>
+		<form>
+
+		<!-- How to implement checkbox?? -->
+		<h1>How to implement checkbox??</h1>
+		<h3>Choose your known language?</h3>
+		<form>
+			<input type="checkbox" name="languages" value="english"> English <br>
+			<input type="checkbox" name="languages" value="gujarati" checked> Gujarati <br>
+			<input type="checkbox" name="languages" value="hindi"> Hindi <br>
+			<input type="checkbox" name="languages" value="marathi"> Marathi <br>
+			<input type="checkbox" name="languages" value="punjabi"> Punjabi <br>
+			<input type="submit" value="Submit"/>
+		</form>
+
+		<!-- How to create text area -->
+		<h1> How to create text area </h1>
+		<form>
+			<h3>Enter your feedback here:</h3>
+				<textarea name=feedback rows="5" cols="30">
+				</textarea><br>
+				<input type="submit" value="Submit">
+		</form>
+
+		<!-- Adding Video -->
+		<h1>Adding Video</h1>
+		<video controls autoplay>
+  		<source src="sample-mp4-file.mp4" type="video/mp4">
+    </video>
+
+		<!-- Add Youtube video in WebPage-->
+		<h1>Add youtube video in webpage</h1>
+		<iframe width="420" height="315"
+			src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1">
+		</iframe>
+		
+		<iframe src="https://datahub.io/core/geoip2-ipv4/r/0.html" width="100%" height="100%" frameborder="0"></iframe>
+	</body>
+</html>

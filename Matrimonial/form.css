@@ -1,0 +1,21 @@
+body{
+  background: red;
+  color:white;
+}
+img{
+  border: 10px white groove;
+}
+form{
+  text-align: center;
+  border: 5px yellow double;
+}
+header{
+  background-color: yellow;
+  width: auto;
+  height: auto;
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: bold;
+  font-style: oblique;
+  border: 5px red double;
+}

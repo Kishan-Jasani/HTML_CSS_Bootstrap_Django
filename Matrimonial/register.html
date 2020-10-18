@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="form.css">
+    <title>Register Here</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="home.html">Home</a> |
+        <a href="register.html">Register</a>
+      </nav>
+    </header>
+    <form action="thankyou.html">
+      <h1>Registration Form</h1>
+      <h3>All fields are mandatory</h3>
+      <label for="name">Name:</label>
+      <input id="name" type="text" name="username" placeholder="Enter name" required>*<br>
+      <label for="email">Email:</label>
+      <input id="email" type="email" name="email" placeholder="Enter email" required>*<br>
+      <label for="age">Age:</label>
+      <input id="age" type="text" name="age" placeholder="Enter age" required>*<br>
+
+      <h2>Are you intrested in dating?</h2>
+      <label for="y">Yes</label>
+      <input id="y" type="radio" name="date" value="" required>
+      <label for="n">No</label>
+      <input id="n" type="radio" name="date" value="" required>
+
+      <h2>Your expectataions like?</h2>
+      <select class="expectataion" name="" required>*
+        <option value="kk1">Katrina Kaif</option>
+        <option value="kk2">Kareena Kapoor</option>
+        <option value="sh">Shruti Hassan</option>
+        <option value="ka">Kajal Agrawal</option>
+        <option value="tc">Tisca Chopra</option>
+      </select>
+
+      <h2>How many marriages you want?</h2>
+      <select class="marriages" name="" required>*
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
+
+      <h2>Are you Alchoholic?</h2>
+      <label for="ys">Yes</label>
+      <input id="ys" type="checkbox" name="Yes" value="">
+      <label for="no">No</label>
+      <input id="no" type="checkbox" name="No" value="" >
+      <label for="oc">Occasionally</label>
+      <input id="oc" type="checkbox" name="Occasionally" value="" >
+
+      <h2>Your preference and extra information:</h2>
+      <textarea name="name" rows="8" cols="80" required></textarea>
+
+      <br><br>
+      <input type="submit" name="" value="Register">
+    </form>
+  </body>
+</html>

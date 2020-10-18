@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Employee's Information</h1><hr>
+    {%if emp%}
+      <table border="2">
+        <thead>
+          <th>Employee Number</th>
+          <th>Employee Name</th>
+          <th>Employee Salary</th>
+          <th>Employee Address</th>
+        </thead>
+        {%for em in emp%}
+          <tr>
+            <td>{{em.emp_no}}</td>
+            <td>{{em.emp_name}}</td>
+            <td>{{em.emp_sal}}</td>
+            <td>{{em.emp_add}}</td>
+          </tr>
+        {%endfor%}
+    </table>
+    {%else%}
+    <p>Employee Not Found!!</p>
+    {%endif%}
+  </body>
+</html>

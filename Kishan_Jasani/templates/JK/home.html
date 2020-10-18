@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title%}Home{% endblock %}
+
+{% block style%}
+body{
+  background: url(https://images.unsplash.com/photo-1485988412941-77a35537dae4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1072&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container{
+  margin-top:350px;
+}
+{% endblock %}
+
+{% block content%}
+<div class="container" align="center">
+<div class="jumbotron">
+  <h1>Hello, welcome!!</h1>
+  <p>
+  <a class="btn btn-success btn-lg" href="#" role="button">Send Query</a>
+  <a class="btn btn-success btn-lg" href="#" role="button">Professional</a>
+</p>
+</div>
+</div>
+{% endblock %}
